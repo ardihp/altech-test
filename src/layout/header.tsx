@@ -59,9 +59,11 @@ export default function HeaderSection() {
             Contact
           </p>
 
-          <button className="bg-sky-400 px-4 lg:px-6 py-2 lg:py-3 rounded-md lg:rounded-lg lg:shadow-lg shadow-sky-300">
-            <p className="text-xs lg:text-sm text-white font-medium">Login</p>
-          </button>
+          <Link href="/login">
+            <button className="bg-sky-400 px-4 lg:px-6 py-2 lg:py-3 rounded-md lg:rounded-lg lg:shadow-lg shadow-sky-300">
+              <p className="text-xs lg:text-sm text-white font-medium">Login</p>
+            </button>
+          </Link>
         </div>
 
         <Popover open={open} onOpenChange={setOpen}>
@@ -99,9 +101,13 @@ export default function HeaderSection() {
               Contact
             </p>
 
-            <button className="w-full bg-sky-400 px-4 lg:px-6 py-2 lg:py-3 rounded-md lg:rounded-lg lg:shadow-lg shadow-sky-300">
-              <p className="text-xs lg:text-sm text-white font-medium">Login</p>
-            </button>
+            <Link href="/login">
+              <button className="w-full bg-sky-400 px-4 lg:px-6 py-2 lg:py-3 rounded-md lg:rounded-lg lg:shadow-lg shadow-sky-300">
+                <p className="text-xs lg:text-sm text-white font-medium">
+                  Login
+                </p>
+              </button>
+            </Link>
           </PopoverContent>
         </Popover>
       </div>
