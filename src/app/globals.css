@@ -10,4 +10,7 @@
   p {
     @apply text-neutral-600;
   }
+  :root {
+    --radius: 0.5rem;
+  }
 }
