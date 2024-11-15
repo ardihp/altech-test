@@ -6,7 +6,7 @@ export default function LayoutSection({ children }: { children: ReactNode }) {
   return (
     <main className="flex flex-col w-full min-h-screen">
       <HeaderSection />
-      <section className="flex flex-col flex-grow">{children}</section>
+      <section className="flex flex-grow h-full overflow-hidden">{children}</section>
       <FooterSection />
     </main>
   );
