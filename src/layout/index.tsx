@@ -4,9 +4,9 @@ import FooterSection from "./footer";
 
 export default function LayoutSection({ children }: { children: ReactNode }) {
   return (
-    <main className="flex flex-col w-full">
+    <main className="flex flex-col w-full min-h-screen">
       <HeaderSection />
-      {children}
+      <section className="flex flex-col flex-grow">{children}</section>
       <FooterSection />
     </main>
   );
